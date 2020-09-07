@@ -1,0 +1,4 @@
+*.vscode*
+src/server.js
+src/config/database.js
+package-lock.json
