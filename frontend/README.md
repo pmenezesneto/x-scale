@@ -1,6 +1,6 @@
-# XScale (xscale)
+# Quasar App (frontend)
 
-A app to control the scale
+A Quasar Framework app
 
 ## Install the dependencies
 ```bash

@@ -1,9 +1,9 @@
 {
-  "name": "xscale",
+  "name": "frontend",
   "version": "0.0.1",
-  "description": "A app to control the scale",
-  "productName": "XScale",
-  "author": "Pedro Neto <pedroneto@landix.com.br>",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
+  "author": "Joyce Silva <joycesilva@landix.com.br>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

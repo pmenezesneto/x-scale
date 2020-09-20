@@ -1,6 +1,6 @@
 <template>
     <div class="col-4 floating-label">
-      <div class="col" style="height: 150px">
+      <div class="col" style="height: 350px">
         <div class="row floating-label justify-center items-center">
           <q-icon class="justify-center items-center" size="5rem" name="person" />
         </div>
@@ -14,18 +14,17 @@
         </div>
         <div class="row floating-label justify-center items-center">
           <q-btn
+              color="purple"
               @click="login"
               label="acessar"
           />
         </div>
       </div>
     </div>
-
 </template>
 
 <script>
 import settings from 'src/statics/axiosSettings'
-
 export default {
   name: 'Login',
   computed: {

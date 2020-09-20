@@ -100,12 +100,7 @@ module.exports = function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: [
-        'Notify',
-        'LocalStorage',
-        'SessionStorage',
-        'Loading'
-      ]
+      plugins: []
     },
 
     // animations: 'all', // --- includes all animations
@@ -122,9 +117,9 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'XScale',
-        short_name: 'XScale',
-        description: 'A app to control the scale',
+        name: 'Quasar App',
+        short_name: 'Quasar App',
+        description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -189,7 +184,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'xscale'
+        appId: 'frontend'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration

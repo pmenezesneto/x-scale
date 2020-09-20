@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -6,27 +6,27 @@ module.exports = {
       id: {
         type: Sequelize.STRING(32),
         allowNull: false,
-        primaryKey: true,
+        primaryKey: true
         // defaultValue: Sequelize.literal("REPLACE(UUID(),'-','')"),
 
       },
       name: {
         type: Sequelize.STRING(100),
-        allowNull: false,
+        allowNull: false
       },
       email: {
         type: Sequelize.STRING(100),
         allowNull: false,
-        unique: true,
+        unique: true
       },
       password: {
         type: Sequelize.STRING(100),
-        allowNull: false,
-      },
+        allowNull: false
+      }
     })
   },
 
   down: async (queryInterface) => {
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('users')
   }
-};
+}

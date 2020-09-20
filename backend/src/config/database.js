@@ -6,5 +6,5 @@ module.exports = {
   dialect: 'mysql',
   define: {
     timestamps: false
-  },
+  }
 }
