@@ -4,6 +4,7 @@
       <form-login/>
       <router-view />
     </q-page-container>
+          <!-- <q-side-link  to="/cadastro" clickable @click="$router.replace('/cadastro')">Go to Route</q-side-link> -->
   </q-layout>
 </template>
 
@@ -24,4 +25,5 @@ export default {
 .background
   background-image: url('../statics/images/background.png');
   background-size: 100%;
+  opacity: 0.9;
 </style>

@@ -2,23 +2,36 @@
     <div class="col-4 floating-label">
       <div class="col" style="height: 350px">
         <div class="row floating-label justify-center items-center">
-          <q-icon class="justify-center items-center" size="5rem" name="person" />
+          <q-icon class="justify-center items-center fas fa-user" color="white" size="7rem" style="opacity: 0.8;"/>
         </div>
-        <div class="column justify-evenly" style="height: 150px">
+        <div class="column justify-evenly" style="height: 175px">
           <div class="col-4">
-              <q-input rounded outlined v-model="loginInformations.user" label="usuário" />
+              <q-input rounded standout="black" bg-color="white" v-model="loginInformations.user" label="usuário" style="opacity: 0.2;font-family: 'Arciform';font-size:20px"/>
           </div>
           <div class="col-4">
-              <q-input rounded outlined v-model="loginInformations.password" label="senha" />
+              <q-input rounded standout="black" bg-color="white" v-model="loginInformations.password" :type="isPwd ? 'password' : 'text'" label="senha" style="opacity: 0.2;font-family: 'Arciform'; font-size:20px">
+                <template v-slot:append>
+                  <q-icon
+                  :name="isPwd ? 'visibility_off' : 'visibility'"
+                  class="cursor-pointer"
+                  @click="isPwd = !isPwd"
+                  />
+                </template>
+              </q-input>
           </div>
         </div>
         <div class="row floating-label justify-center items-center">
           <q-btn
-              color="purple"
+              color="deep-purple-9"
+              size="19px"
+              text-color="blue"
+              no-caps
+              style="border-radius: 10px;font-family: 'Arciform';"
               @click="login"
               label="acessar"
           />
         </div>
+        <q-btn flat color="blue-grey-3" size="16px" no-caps label="Cadastrar" @click="$router.replace('/cadastro')"  style="font-family: 'Arciform';"/>
       </div>
     </div>
 </template>
@@ -46,7 +59,8 @@ export default {
   data () {
     return {
       user: '',
-      password: ''
+      password: '',
+      isPwd: true
     }
   },
   methods: {
