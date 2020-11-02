@@ -15,6 +15,13 @@ class WorkdayGradeHours extends model {
 
     return this;
   }
+
+  static associate(models) {
+    this.belongsTo(models.UserWorkdayGradeHours, {
+      targetKey: 'id',
+      foreignKey: 'idWorkdayGradeHour'
+    })
+  }
 }
 
 export default WorkdayGradeHours;

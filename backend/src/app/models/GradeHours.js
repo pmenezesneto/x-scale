@@ -5,6 +5,7 @@ class GradeHours extends Model {
     super.init(
       {
         id: Sequelize.STRING,
+        name: Sequelize.STRING,
         start: Sequelize.STRING,
         end: Sequelize.STRING,
       },
