@@ -1,0 +1,2 @@
+[2020-12-07 17:39:39.688] [sharedprocess] [info] main {"machineId":"5a9018d77c1fb58d1520cd274ed9be85fe9c69a29e12503564b7f20fe2e93e17","windowId":2}
+[2020-12-07 17:39:39.785] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/root/x-scale/frontend/User/snippets'

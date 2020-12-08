@@ -1,15 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-page-container class="row justify-center items-center background">
+    <q-page-container class="row justify-center items-center background full-width full-height">
       <form-login/>
       <router-view />
     </q-page-container>
-          <!-- <q-side-link  to="/cadastro" clickable @click="$router.replace('/cadastro')">Go to Route</q-side-link> -->
   </q-layout>
 </template>
 
 <script>
-import Login from '../components/Login.vue'
+import Login from '../pages/Login.vue'
 
 export default {
   name: 'MainLayout',
@@ -21,9 +20,10 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.background
+<style>
+.background{
   background-image: url('../statics/images/background.png');
-  background-size: 100%;
+  background-size: cover;
   opacity: 0.9;
+}
 </style>

@@ -1,0 +1,9 @@
+[2020-11-29 00:11:36.438] [sharedprocess] [info] main {"machineId":"5a9018d77c1fb58d1520cd274ed9be85fe9c69a29e12503564b7f20fe2e93e17","windowId":2}
+[2020-11-29 00:11:36.522] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/root/x-scale/frontend/User/snippets'
+[2020-11-29 00:11:38.895] [sharedprocess] [info] Installing extension: octref.vetur
+[2020-11-29 00:11:41.492] [sharedprocess] [info] Downloaded extension: octref.vetur /root/x-scale/frontend/CachedExtensionVSIXs/octref.vetur-0.30.3
+[2020-11-29 00:11:45.954] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.octref.vetur-0.30.3: octref.vetur
+[2020-11-29 00:11:45.955] [sharedprocess] [info] Renamed to /root/.vscode/extensions/octref.vetur-0.30.3
+[2020-11-29 00:11:45.958] [sharedprocess] [info] Installation completed. octref.vetur
+[2020-11-29 00:11:46.005] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2020-11-29 00:12:16.474] [sharedprocess] [info] Starting to clean up unused language packs.
